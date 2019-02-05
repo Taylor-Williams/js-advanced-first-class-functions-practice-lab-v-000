@@ -8,7 +8,7 @@ const logDriversByHometown = function(drivers, hometown){
   logDriverNames(drivers.filter(driver => driver.hometown === hometown))
 }
 const driversByRevenue = function(drivers){
-  return drivers.slice().sort(function(a,b){
+  return drivers.sort(function(a,b){
     return a.revenue - b.revenue
   })
 }
